@@ -1,6 +1,7 @@
 #include <iostream>
 #include <thread>
 
+// Compile with clang
 void hello()
 {
     std::cout<<"Hello Concurrent World\n";
