@@ -1,6 +1,13 @@
 #include <iostream>
+#include <thread>
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+void hello()
+{
+    std::cout<<"Hello Concurrent World\n";
+}
+
+int main()
+{
+    std::thread t(hello);
+    t.join();
 }
